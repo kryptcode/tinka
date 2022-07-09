@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.main-btn {
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+@layer base {
+    body {
+        @apply bg-gray-100;
+    }
+}
+
+@layer components {
+    .size-btn {
+        @apply p-3 px-4 border-2 border-white rounded-full hover:border-[#4a00e0];
+    }
+}
