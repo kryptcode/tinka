@@ -14,7 +14,7 @@ const Main = ({ data }) => {
         <Filter />
       </div>
 
-      <div className='grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4'>
+      <div className='grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4'>
         {
           data.map(item => {
             const id = item.id
@@ -24,7 +24,7 @@ const Main = ({ data }) => {
               onClick={() => router.push(`/products/${id}`)}
             >
               <div>
-                <img src={item.imageURL} className='h-[16rem] w-full object-contain' alt="" />
+                <img src={item.imageURL} className='h-[16rem] w-full object-cover' loading='lazy' alt="" />
               </div>
               <div className='text-sm pl-3 mt-2'>
                 <h6 className='font-semibold mb-1'>

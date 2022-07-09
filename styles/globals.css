@@ -20,6 +20,6 @@
 
 @layer components {
     .size-btn {
-        @apply p-3 px-4 border-2 border-white rounded-full hover:border-[#4a00e0];
+        @apply p-3 px-4 border-2 border-white rounded-full hover:border-[#4a00e0] cursor-pointer;
     }
 }

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Header from '../../components/Header'
+import Modal from '../../components/Product/Modal';
 import Radio from '../../components/Product/Radio';
 
 const Product = ({ product, title }) => {
@@ -41,8 +42,8 @@ const Product = ({ product, title }) => {
           <p className='text-xl font-semibold mb-6'>
           &#8358; {' '} {product.amount}
           </p>
-          <div className='font-semibold mb-8 '>
-            <p>Select Size <span className='ml-3 text-[#4a00e0] font-thin text-sm hover:underline cursor-pointer '>Size Chart</span> </p>
+          <div className='mb-8 '>  
+          <Modal />
           </div>
           <div className='mb-6'>
             <Radio />
