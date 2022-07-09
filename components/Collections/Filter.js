@@ -19,7 +19,7 @@ export default function Filter() {
   }
 
   return (
-    <select className='p-2 border border-gray-500 text-gray-500 rounded-md'>
+    <select className='py-1 px-2 border border-gray-500 text-gray-500 rounded-md'>
       <option value="">Default</option>
       <option value="" onClick={handleDesc}>Price: High to Low</option>
       <option value="" onClick={handleAsc}>Price: Low to High</option>
