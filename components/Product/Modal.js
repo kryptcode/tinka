@@ -3,7 +3,7 @@ import { Fragment, useState } from 'react'
 import SizeCharts from './SizeCharts'
 
 export default function Modal() {
-  let [isOpen, setIsOpen] = useState(true)
+  let [isOpen, setIsOpen] = useState(false)
 
   function closeModal() {
     setIsOpen(false)
